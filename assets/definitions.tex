@@ -1,0 +1,75 @@
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \vspace{-2pt}
+  \item
+    {\fontsize{10}{10}\selectfont
+  #1
+}
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+
+\newcommand{\projectSubheading}[2]{
+  \vspace{2pt}
+  \item \textbf{#1} (\textit{#2})
+  \vspace{-1pt}
+}
+
+\newcommand{\award}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{9}{9}\selectfont\textbf{#1}& \fontsize{9.5}\selectfont\textit{#2}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\projectSubheadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\projectSubheadingListEnd}{\end{itemize}}
+\newcommand{\awardListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\awardListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% New environments from doc2 for multi-column entries
+\newenvironment{twocolentry}[2][]{
+  \onecolentry
+  \def\secondColumn{#2}
+  \setcolumnwidth{\fill, 4.5 cm}
+  \begin{paracol}{2}
+}{
+  \switchcolumn \raggedleft \secondColumn
+  \end{paracol}
+  \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+  \onecolentry
+  \def\thirdColumn{#3}
+  \setcolumnwidth{, \fill, 4.5 cm}
+  \begin{paracol}{3}
+  {\raggedright #2} \switchcolumn
+}{
+  \switchcolumn \raggedleft \thirdColumn
+  \end{paracol}
+  \endonecolentry
+}

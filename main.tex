@@ -1,0 +1,57 @@
+%------------------------
+% Merged Resume Template
+% Author : Merged by Moamen Sherif
+% License : MIT
+%------------------------
+
+\documentclass[a4paper]{article}
+\input{assets/package_styles.tex}
+\input{assets/definitions.tex}
+
+\begin{document}
+
+%-----Header-----
+\input{sections/Header.tex}
+
+%-----Professional Summary-----
+\vspace{-2pt}
+\section{Professional Summary}
+\input{sections/Professional-Summary.tex}
+
+%-----Education-----
+\section{Education}
+\resumeSubHeadingListStart
+\input{sections/Education.tex}
+\resumeSubHeadingListEnd
+
+%-----EXPERIENCE-----
+\section{Experience}
+\resumeSubHeadingListStart
+\input{experience/Beyond-Creation.tex}
+\input{experience/Eraasoft.tex}
+\resumeSubHeadingListEnd
+
+%-----Projects-----
+\section{Projects}
+\projectSubheadingListStart
+\input{projects/Madinet-Masr.tex}
+\input{projects/Kenaz.tex}
+\input{projects/E-Care.tex}
+\input{projects/Coding-Arabic.tex}
+\input{projects/OS-Project.tex}
+\input{projects/Sonic-Mania.tex}
+\projectSubheadingListEnd
+
+%-----Skills-----
+\section{Skills}
+\resumeSubHeadingListStart
+\input{sections/Skills.tex}
+\resumeSubHeadingListEnd
+
+%-----Achievements-----
+\section{Achievements}
+\resumeSubHeadingListStart
+\input{sections/Achievements.tex}
+\resumeSubHeadingListEnd
+
+\end{document}
